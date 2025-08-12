@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Now International Ltd</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Header -->
+  <header class="fixed top-0 bg-white shadow-lg w-full z-50 shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="./images/travel_now_logo.webp" alt="Logo" class="w-20 h-10 rounded-full">
+        <span class="font-bold text-lg sm:text-xl">Travel Now International</span>
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-6 text-sm sm:text-base">
+        <a href="#home" class="hover:text-orange-400">Home</a>
+        <a href="#services" class="hover:text-orange-400">Services</a>
+        <a href="#checklist" class="hover:text-orange-400">Checklist</a>
+        <a href="#contact" class="hover:text-orange-400">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-blue-800">
+      <a href="#home" class="block px-4 py-2 hover:bg-orange-500">Home</a>
+      <a href="#services" class="block px-4 py-2 hover:bg-orange-500">Services</a>
+      <a href="#checklist" class="block px-4 py-2 hover:bg-orange-500">Checklist</a>
+      <a href="#contact" class="block px-4 py-2 hover:bg-orange-500">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="mt-14 bg-cover bg-center text-white text-center px-4 py-24 sm:py-32"
+    style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80');">
+    <div class="bg-blue-900 bg-opacity-70 p-6 rounded-lg inline-block">
+      <h1 class="text-3xl sm:text-5xl font-bold">Travel Now International Ltd</h1>
+      <p class="mt-3 text-lg sm:text-xl">Travel And Discover The World</p>
+      <a href="#contact" class="mt-6 inline-block bg-orange-500 hover:bg-orange-600 transition px-6 py-3 rounded-lg shadow-lg">Explore Now</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="bg-white py-16 px-4">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 text-blue-900">Our Services</h2>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      <!-- Service Card -->
+      <div class="p-6 border rounded-lg shadow-sm hover:shadow-md text-center">
+        <img src="./images/services/airticket.jpg" alt="Air Tickets" class="w-full h-40 object-cover rounded-md">
+        <h3 class="mt-4 text-lg sm:text-xl font-semibold text-orange-500">Air Tickets</h3>
+      </div>
+      <div class="p-6 border rounded-lg shadow-sm hover:shadow-md text-center">
+        <img src="./images/services/visa-assistance.jpg" alt="Visa Assistance" class="w-full h-40 object-cover rounded-md">
+        <h3 class="mt-4 text-lg sm:text-xl font-semibold text-orange-500">Visa Assistance</h3>
+      </div>
+      <div class="p-6 border rounded-lg shadow-sm hover:shadow-md text-center">
+        <img src="./images/services/hotel-booking.jpg" alt="Hotel Booking" class="w-full h-40 object-cover rounded-md">
+        <h3 class="mt-4 text-lg sm:text-xl font-semibold text-orange-500">Hotel Booking</h3>
+      </div>
+      <div class="p-6 border rounded-lg shadow-sm hover:shadow-md text-center">
+        <img src="./images/services/holiday-packages.jpg" alt="Holiday Packages" class="w-full h-40 object-cover rounded-md">
+        <h3 class="mt-4 text-lg sm:text-xl font-semibold text-orange-500">Holiday Packages</h3>
+      </div>
+      <div class="p-6 border rounded-lg shadow-sm hover:shadow-md text-center">
+        <img src="./images/services/inbound-outbound.jpg" alt="Inbound & Outbound Tours" class="w-full h-40 object-cover rounded-md">
+        <h3 class="mt-4 text-lg sm:text-xl font-semibold text-orange-500">Inbound & Outbound Tours</h3>
+      </div>
+      <div class="p-6 border rounded-lg shadow-sm hover:shadow-md text-center">
+        <img src="./images/services/transfers.jpg" alt="Transfers" class="w-full h-40 object-cover rounded-md">
+        <h3 class="mt-4 text-lg sm:text-xl font-semibold text-orange-500">Transfers</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Checklist -->
+  <section id="checklist" class="bg-blue-50 py-16 px-4">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center text-blue-900 mb-8">Your Travel Checklist</h2>
+    <ul class="space-y-4 max-w-2xl mx-auto text-base sm:text-lg">
+      <li>✔ Make sure you have a valid PASSPORT & VISA for the country you are visiting</li>
+      <li>✔ Avoid extra charges by keeping baggage within allowance</li>
+      <li>✔ Be careful not to pack prohibited items</li>
+      <li>✔ Arrive at least 3 hours before departure time</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-blue-900 text-white pt-12 px-4">
+    <div class="max-w-6xl mx-auto grid gap-8 sm:grid-cols-3 text-center sm:text-left">
+      <!-- Contact Info -->
+      <div>
+        <h3 class="font-bold text-lg mb-4">Contact</h3>
+        <p>Zainabu Aziza Emporium, Shop No. 16 B-4</p>
+        <p>📞 +256 775 386 876</p>
+        <p>📞 +256 704 800 869</p>
+        <p>✉ travelnowinternational@gmail.com</p>
+      </div>
+      <!-- Services -->
+      <div>
+        <h3 class="font-bold text-lg mb-4">Services</h3>
+        <ul>
+          <li>Air Tickets</li>
+          <li>Visa Assistance</li>
+          <li>Hotel Booking</li>
+          <li>Holiday Packages</li>
+          <li>Inbound & Outbound Tours</li>
+          <li>Transfers</li>
+        </ul>
+      </div>
+      <!-- Social Media -->
+      <div>
+        <h3 class="font-bold text-lg mb-4">Follow Us</h3>
+        <div class="flex justify-center sm:justify-start space-x-4">
+          <a href="#" class="hover:text-orange-400">Facebook</a>
+          <a href="#" class="hover:text-orange-400">Instagram</a>
+          <a href="#" class="hover:text-orange-400">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <div class="mt-8 border-t border-blue-600 py-4 text-center text-sm">
+      ©2025. Travel Now International Limited. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <!-- <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script> -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    // Toggle menu
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    // Close menu when clicking a menu link
+    document.querySelectorAll('#menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.add('hidden');
+      });
+    });
+  });
+</script>
+</body>
+</html>
